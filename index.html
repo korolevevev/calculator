@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="main">
+    <div class="calculator">
+        <div class="screen">
+            <div class="screen-last" id="lastOperationScreen"></div>
+            <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
+        <div class="button-grid">
+            <button class="btn btn-red span-2" id="clearBtn">CLEAR</button>
+            <button class="btn btn-blue span-2" id="deleteBtn">DELETE</button>
+
+            <button class="btn" data-number>7</button>
+            <button class="btn" data-number>8</button>
+            <button class="btn" data-number>9</button>
+            <button class="btn" data-operator>÷</button>
+
+            <button class="btn" data-number>4</button>
+            <button class="btn" data-number>5</button>
+            <button class="btn" data-number>6</button>
+            <button class="btn" data-operator>×</button>
+
+            <button class="btn" data-number>1</button>
+            <button class="btn" data-number>2</button>
+            <button class="btn" data-number>3</button>
+            <button class="btn" data-operator>-</button>
+
+            <button class="btn" id="pointBtn">.</button>
+            <button class="btn" data-number>0</button>
+            <button class="btn" id="equalsBtn">=</button>
+            <button class="btn" data-operator>+</button>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
